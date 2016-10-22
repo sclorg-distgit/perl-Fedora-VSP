@@ -2,7 +2,7 @@
 
 Name:           %{?scl_prefix}perl-Fedora-VSP
 Version:        0.001
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Perl version normalization for RPM
 License:        GPLv3+
 Group:          Development/Libraries
@@ -55,6 +55,9 @@ find %{buildroot} -type f -name .packlist -delete
 %{_mandir}/man3/*
 
 %changelog
+* Sun Jul 24 2016 Petr Pisar <ppisar@redhat.com> - 0.001-5
+- Rebuild without bootstrap
+
 * Mon May 30 2016 Petr Pisar <ppisar@redhat.com> - 0.001-4
 - Break build cycle when bootstrapping: perl-Fedora-VSP → perl-generators
   → perl-Fedora-VSP
