@@ -2,7 +2,7 @@
 
 Name:           %{?scl_prefix}perl-Fedora-VSP
 Version:        0.001
-Release:        17%{?dist}
+Release:        18%{?dist}
 Summary:        Perl version normalization for RPM
 License:        GPLv3+
 URL:            https://ppisar.fedorapeople.org/Fedora-VSP/
@@ -54,6 +54,9 @@ find %{buildroot} -type f -name .packlist -delete
 %{_mandir}/man3/*
 
 %changelog
+* Tue Jan 07 2020 Jitka Plesnikova <jplesnik@redhat.com> - 0.001-18
+- Re-rebuild of bootstrapped packages
+
 * Thu Dec 19 2019 Jitka Plesnikova <jplesnik@redhat.com> - 0.001-17
 - SCL
 
